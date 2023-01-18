@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!---------------Hero Section----------------------->
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <img src="images/logo.png" alt="logo image" class="logo">
+                <ul id="side-menu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>Front End Developer</p>
+                <h1>Hi, Im <span>Jenish Shakya</span><br>
+                    from Nepal</h1>
+            </div>
+        </div>
+    </div>
+
+    <!--------------About Section---------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user-2.png" alt="">
+                </div>
+
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, quam nulla aliquid voluptatum
+                        porro totam repudiandae mollitia distinctio similique, quo veritatis maiores placeat a.
+                        Consequuntur accusantium accusamus laborum quae fugit!</p>
+
+                    <div class="tab-titles">
+                        <div class="tab-links active-link" onclick="openTab('skills')">Skills</div>
+                        <div class="tab-links" onclick="openTab('experience')">Experience</div>
+                        <div class="tab-links" onclick="openTab('education')">Education</div>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Graphic Design</span><br>Designing Posters, Logo, Flyer</li>
+                            <li><span>Web Design</span><br>Designing Web App Interfaces</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Dot Net Developer</span><br>Designing and Developing Web App</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Running</span><br>Bachelors in Computer Application</li>
+                            <li><span>2075</span><br>+2 Education</li>
+                            <li><span>2072-73</span><br>S.L.C</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------Services--------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit tenetur explicabo ipsa
+                        doloremque adipisci dolorem tempora eaque, praesentium tempore sapiente sunt, id ipsam hic eius
+                        nesciunt quia! Corporis, voluptate!</p>
+                    <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Web Dev</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit tenetur explicabo ipsa
+                        doloremque adipisci dolorem tempora eaque, praesentium tempore sapiente sunt, id ipsam hic eius
+                        nesciunt quia! Corporis, voluptate!</p>
+                    <a href="">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Graphic Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odit tenetur explicabo ipsa
+                        doloremque adipisci dolorem tempora eaque, praesentium tempore sapiente sunt, id ipsam hic eius
+                        nesciunt quia! Corporis, voluptate!</p>
+                    <a href="">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------Work--------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Graphic Design</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque nam, exercitationem
+                            laudantium rem deserunt nostrum quidem reiciendis ullam eius nisi et sequi. Enim facilis
+                            tempora quasi magni vitae voluptate!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Photo Editing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque nam, exercitationem
+                            laudantium rem deserunt nostrum quidem reiciendis ullam eius nisi et sequi. Enim facilis
+                            tempora quasi magni vitae voluptate!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Video Editing</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque cumque nam, exercitationem
+                            laudantium rem deserunt nostrum quidem reiciendis ullam eius nisi et sequi. Enim facilis
+                            tempora quasi magni vitae voluptate!</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------Contact-------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>015534988</p>
+                    <div class="social-icon">
+                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Enter your name">
+                        <input type="email" name="Email" placeholder="Enter your email">
+                        <textarea name="Message" rows="6" placeholder="Enter your message"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright @Kevin. made by Easy Tutorial</p>
+    </div>
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links");
+        var tabContents = document.getElementsByClassName("tab-contents");
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                console.log(tabLink)
+                tabLink.classList.remove("active-link");
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("side-menu");
+
+        function closeMenu() {
+            sidemenu.style.right = "-200px"
+        }
+        function openMenu() {
+            sidemenu.style.right = "0px";
+        }
+    </script>
+
+    <script>
+        window.addEventListener("scroll", function(){
+            var navbar = document.getElementById("navbar");
+            navbar.classList.toggle("sticky", window.pageYOffset > 0);
+        });
+    </script>
+</body>
+
+</html>
